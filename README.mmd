@@ -22,8 +22,6 @@ sequenceDiagram
     server-->>browser: HTML document
     deactivate server
 
-    Note right of browser: The browser executes the callback function that renders the notes
-
     Note right of browser: The browser requests the css file
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
@@ -50,3 +48,6 @@ sequenceDiagram
     activate server
     server-->>browser: [{ "content": "También existen madridistas de izquierdas", "date": "2024-05-28T08:20:28.015Z" }, ... ]
     deactivate server
+
+
+    Note right of browser: The browser executes the callback function that renders the notes
